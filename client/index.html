@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPS game</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <script defer src="socket.io/socket.io.js"></script>
+    <script defer src="src/client.js"></script>
+  </head>
+  <body>
+    <div class="class">
+      <ul id="events"></ul>
+    </div>
+    <div class="button-wrapper">
+      <form id="chat-form" action="">
+        <input type="text" id="chat" />
+        <button id="say">Say</button>
+      </form>
+      <button id="rock">Rock</button>
+      <button id="paper">Paper</button>
+      <button id="scissors">Scissors</button>
+    </div>
+  </body>
+</html>
