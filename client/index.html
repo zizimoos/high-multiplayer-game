@@ -10,17 +10,22 @@
     <script defer src="src/client.js"></script>
   </head>
   <body>
-    <div class="class">
+    <div class="rps-wrapper">
       <ul id="events"></ul>
-    </div>
-    <div class="button-wrapper">
-      <form id="chat-form" action="">
-        <input type="text" id="chat" />
-        <button id="say">Say</button>
-      </form>
-      <button id="rock">Rock</button>
-      <button id="paper">Paper</button>
-      <button id="scissors">Scissors</button>
+      <div class="controls">
+        <div class="chat-wrapper">
+          <form id="chat-form">
+            <input id="chat" autocomplete="off" title="chat" />
+            <button id="say">Say</button>
+          </form>
+        </div>
+
+        <div class="button-wrapper">
+          <button id="rock" class="turn">Rock</button>
+          <button id="paper" class="turn">Paper</button>
+          <button id="scissors" class="turn">Scissors</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
