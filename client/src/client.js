@@ -37,4 +37,7 @@ document
   .querySelector("#chat-form")
   .addEventListener("submit", onFormSubmitted);
 
+// document.getElementById("display-game").scrollTop =
+//   document.getElementById("display-game").scrollHeight;
+
 addButtonListeners();

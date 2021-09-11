@@ -29,7 +29,7 @@ io.on("connection", (socket) => {
     new RpsGame(waitingPlayer, socket);
     waitingPlayer = null;
   }
-  socket.emit("message", "Hi,everyone you are connected");
+  // socket.emit("message", "Hi,everyone you are connected");
   socket.on("message", (text) => {
     io.emit("message", text);
   });
